@@ -1,0 +1,12 @@
+echo "# python-excersies" >> README.md
+git init
+git добавить README.md
+git commit -m "первый commit"
+git branch -M main
+git remote add origin https://github.com/Alkoralexsee/python-excersies.git
+git push -u origin main
+
+original = " Python strings are COOL! "
+lower_cased = original.lower()
+stripped = original.strip()
+stripped_lower_cased = original.strip().lower()
