@@ -1,0 +1,16 @@
+def get_playing_board(size):
+    board = ""
+    for i in range(size):
+        for j in range(size):
+            if (i + j) % 2 == 0:
+                board += " *"
+            else:
+                board += " "
+        board += "\n"
+    return board
+
+board_of_5 = get_playing_board(5)
+print(board_of_5)
+
+board_of_10 = get_playing_board(10)
+print(board_of_10)
