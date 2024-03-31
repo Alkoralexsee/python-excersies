@@ -1,0 +1,22 @@
+class StringManipulator:
+    """A class for manipulating strings"""
+    
+    category = "Text"
+    
+    def __init__(self, original):
+        self.string = original
+        
+    def reverse_words(self):
+        words = self.string.split()
+        self.string = ' '.join(reversed(words))
+        
+    def make_title(self):
+        words = self.string.split()
+        title_words = [word.capitalize() for word in words]
+        self.string = ' '.join(title_words)
+        
+    def get_manipulated(self):
+        return self.string
+
+    def stripped_title(self):
+        return self.string.strip()
