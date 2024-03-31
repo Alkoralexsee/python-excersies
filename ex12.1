@@ -3,7 +3,14 @@ def sum_of_list(values):
     for val in values:
         try:
             numeric_val = float(val)
-        except ValueError as e:
+        except (ValueError, TypeError):
             continue
         total += numeric_val
     return total
+
+list1 = [1, 2, 3]
+list2 = ["1", 2.5, "3.0"]
+list3 = ["", "1"]
+list4 = []
+list5 = ["John", "Doe", "was", "here"]
+nasty_list = [KeyError(), [], dict()]
