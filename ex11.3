@@ -1,0 +1,16 @@
+class Dog:
+    def __init__(self):
+        self.energy = 10
+
+    def sleep(self):
+        self.energy += 2
+
+    def bark(self):
+        if self.energy >= 1:
+            self.energy -= 1
+            print("Woof! Energy consumed.")
+        else:
+            print("Not enough energy to bark. Please sleep to regain energy.")
+
+    def get_energy(self):
+        return self.energy
