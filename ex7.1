@@ -1,0 +1,11 @@
+def super_vowels(text):
+    vowels = ["a", "e", "i", "o", "u"]
+    modified_text = ""
+    
+    for letter in text:
+        if letter.lower() in vowels:
+            modified_text += letter.upper()
+        else:
+            modified_text += letter.lower()
+    
+    return modified_text
