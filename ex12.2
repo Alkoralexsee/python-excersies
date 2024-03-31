@@ -1,0 +1,7 @@
+class TooLongString(Exception):
+    pass
+
+def verify_short_string(input_string):
+    if len(input_string) > 10:
+        raise TooLongString
+  
