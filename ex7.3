@@ -1,0 +1,4 @@
+def average_length_of_words(sentence):
+    words = sentence.split()
+    total_length = sum(len(word) for word in words)
+    return round(total_length / len(words), 1)
